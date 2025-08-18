@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NihonGo - Master Japanese with AI Conversations & Smart Learning</title>
+    <meta name="description" content="Transform your Japanese learning with AI conversations, kana practice, and personalized vocabulary building. Start your journey to fluency today.">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #1d1d1f; }
+        .hero { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 80px 20px; text-align: center; }
+        .hero h1 { font-size: clamp(2.5rem, 5vw, 3.5rem); margin-bottom: 20px; }
+        .hero p { font-size: clamp(1.1rem, 3vw, 1.3rem); margin-bottom: 40px; opacity: 0.9; max-width: 600px; margin-left: auto; margin-right: auto; }
+        .cta-button { background: #ff6b35; color: white; padding: 18px 36px; border: none; border-radius: 50px; font-size: 1.2rem; font-weight: 600; text-decoration: none; display: inline-block; transition: transform 0.2s, background-color 0.2s; }
+        .cta-button:hover { transform: translateY(-2px); background: #e55a2b; }
+        .features { padding: 80px 20px; background: white; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        .feature-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; margin-top: 60px; }
+        .feature-card { text-align: center; padding: 40px 20px; border-radius: 12px; transition: transform 0.2s; }
+        .feature-card:hover { transform: translateY(-5px); }
+        .feature-icon { font-size: 4rem; margin-bottom: 20px; }
+        .feature-card h3 { color: #1d1d1f; margin-bottom: 15px; font-size: 1.5rem; }
+        .feature-card p { color: #424245; }
+        .screenshots { background: #f5f5f7; padding: 80px 20px; text-align: center; }
+        .screenshot-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin-top: 60px; }
+        .screenshot { background: white; padding: 20px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); transition: transform 0.2s; }
+        .screenshot:hover { transform: translateY(-5px); }
+        .screenshot-placeholder { width: 100%; height: 400px; background: linear-gradient(45deg, #f0f0f0 25%, transparent 25%), linear-gradient(-45deg, #f0f0f0 25%, transparent 25%), linear-gradient(45deg, transparent 75%, #f0f0f0 75%), linear-gradient(-45deg, transparent 75%, #f0f0f0 75%); background-size: 20px 20px; background-position: 0 0, 0 10px, 10px -10px, -10px 0px; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #666; font-size: 1.1rem; }
+        .testimonials { padding: 80px 20px; background: white; }
+        .testimonial-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 60px; }
+        .testimonial { background: #f8f9fa; padding: 30px; border-radius: 12px; border-left: 4px solid #007aff; }
+        .testimonial-text { font-style: italic; margin-bottom: 20px; color: #424245; }
+        .testimonial-author { font-weight: 600; color: #007aff; }
+        .download { background: #1d1d1f; color: white; padding: 80px 20px; text-align: center; }
+        .download h2 { font-size: clamp(2rem, 4vw, 2.5rem); margin-bottom: 20px; }
+        .download p { font-size: 1.2rem; margin-bottom: 40px; opacity: 0.9; }
+        .app-store-button { background: #007aff; color: white; padding: 15px 30px; border-radius: 8px; text-decoration: none; display: inline-block; margin: 10px; transition: background-color 0.2s; }
+        .app-store-button:hover { background: #0056b3; }
+        .nav { background: rgba(255,255,255,0.95); backdrop-filter: blur(10px); position: fixed; top: 0; left: 0; right: 0; z-index: 1000; padding: 15px 0; }
+        .nav-content { display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        .nav-logo { font-size: 1.5rem; font-weight: bold; color: #1d1d1f; text-decoration: none; }
+        .nav-links { display: flex; gap: 30px; }
+        .nav-links a { color: #1d1d1f; text-decoration: none; transition: color 0.2s; }
+        .nav-links a:hover { color: #007aff; }
+        .footer { background: #f5f5f7; padding: 40px 20px; text-align: center; color: #86868b; }
+        .footer a { color: #007aff; text-decoration: none; }
+        .footer a:hover { text-decoration: underline; }
+        @media (max-width: 768px) { .nav-links { display: none; } .hero { padding: 60px 20px; } .features, .screenshots, .testimonials, .download { padding: 60px 20px; } }
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-content">
+            <a href="#" class="nav-logo">NihonGo</a>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#screenshots">Screenshots</a>
+                <a href="support.html">Support</a>
+                <a href="privacy.html">Privacy</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <h1>Master Japanese with NihonGo</h1>
+        <p>Transform your Japanese learning with AI conversations, smart kana practice, and personalized vocabulary building</p>
+        <a href="#download" class="cta-button">Start Learning Today</a>
+    </div>
+    
+    <div class="features" id="features">
+        <div class="container">
+            <h2 style="text-align: center; font-size: clamp(2rem, 4vw, 2.5rem); color: #1d1d1f; margin-bottom: 20px;">Why Choose NihonGo?</h2>
+            <p style="text-align: center; font-size: 1.2rem; color: #424245; max-width: 600px; margin: 0 auto 60px;">Built by language learners for language learners, NihonGo combines cutting-edge AI technology with proven learning methods.</p>
+            
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🤖</div>
+                    <h3>AI Conversation Practice</h3>
+                    <p>Practice real Japanese with intelligent AI that adapts to your level. Build confidence through realistic conversations.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">📚</div>
+                    <h3>Smart Kana Learning</h3>
+                    <p>Master hiragana and katakana through interactive lessons, stroke animations, and real-world examples.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Personalized Vocabulary</h3>
+                    <p>Learn essential words through context-rich examples with a system that remembers your progress.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Progress Tracking</h3>
+                    <p>Visual progress indicators, detailed analytics, and achievement system to keep you motivated.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🌍</div>
+                    <h3>Cultural Context</h3>
+                    <p>Understand Japanese language nuances through cultural insights and real-world usage examples.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3>Cross-Device Sync</h3>
+                    <p>Learn on iPhone or iPad with seamless progress synchronization across all your devices.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="screenshots" id="screenshots">
+        <div class="container">
+            <h2 style="font-size: clamp(2rem, 4vw, 2.5rem); color: #1d1d1f; margin-bottom: 20px;">See NihonGo in Action</h2>
+            <p style="font-size: 1.2rem; color: #424245; max-width: 600px; margin: 0 auto;">Beautiful, intuitive design that makes learning Japanese enjoyable and effective.</p>
+            
+            <div class="screenshot-grid">
+                <div class="screenshot">
+                    <div class="screenshot-placeholder">AI Conversation Interface</div>
+                    <p>Practice real Japanese conversations</p>
+                </div>
+                <div class="screenshot">
+                    <div class="screenshot-placeholder">Kana Learning Screen</div>
+                    <p>Interactive character lessons</p>
+                </div>
+                <div class="screenshot">
+                    <div class="screenshot-placeholder">Vocabulary Practice</div>
+                    <p>Smart word learning system</p>
+                </div>
+                <div class="screenshot">
+                    <div class="screenshot-placeholder">Progress Dashboard</div>
+                    <p>Track your learning journey</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="testimonials">
+        <div class="container">
+            <h2 style="text-align: center; font-size: clamp(2rem, 4vw, 2.5rem); color: #1d1d1f; margin-bottom: 20px;">What Learners Say</h2>
+            
+            <div class="testimonial-grid">
+                <div class="testimonial">
+                    <div class="testimonial-text">"NihonGo made learning Japanese fun and engaging. The AI conversations feel so natural!"</div>
+                    <div class="testimonial-author">- Sarah M., Beginner Learner</div>
+                </div>
+                
+                <div class="testimonial">
+                    <div class="testimonial-text">"Finally, an app that actually helps me remember kanji and vocabulary long-term."</div>
+                    <div class="testimonial-author">- Michael T., Intermediate Student</div>
+                </div>
+                
+                <div class="testimonial">
+                    <div class="testimonial-text">"The kana practice is brilliant. I learned hiragana in just a week!"</div>
+                    <div class="testimonial-author">- Emma L., Complete Beginner</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="download" id="download">
+        <h2>Ready to Start Your Japanese Journey?</h2>
+        <p>Join thousands of learners who have transformed their Japanese skills with NihonGo</p>
+        <a href="#" class="app-store-button">Download on App Store</a>
+        <a href="support.html" class="app-store-button">Get Support</a>
+    </div>
+    
+    <div class="footer">
+        <div class="container">
+            <p>© 2024 NihonGo. All rights reserved.</p>
+            <p><a href="privacy.html">Privacy Policy</a> | <a href="support.html">Support</a> | <a href="terms.html">Terms of Service</a></p>
+        </div>
+    </div>
+</body>
+</html>

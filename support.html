@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NihonGo Support - Get Help with Japanese Learning</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #1d1d1f; background: #f5f5f7; }
+        .nav { background: rgba(255,255,255,0.95); backdrop-filter: blur(10px); position: fixed; top: 0; left: 0; right: 0; z-index: 1000; padding: 15px 0; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .nav-content { display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        .nav-logo { font-size: 1.5rem; font-weight: bold; color: #1d1d1f; text-decoration: none; }
+        .nav-links { display: flex; gap: 30px; }
+        .nav-links a { color: #1d1d1f; text-decoration: none; transition: color 0.2s; }
+        .nav-links a:hover { color: #007aff; }
+        .container { max-width: 800px; margin: 0 auto; padding: 0 20px; }
+        .header { background: white; padding: 120px 20px 80px; text-align: center; margin-bottom: 40px; }
+        .header h1 { font-size: clamp(2.5rem, 5vw, 3.5rem); margin-bottom: 20px; color: #1d1d1f; }
+        .header p { font-size: 1.2rem; color: #424245; max-width: 600px; margin: 0 auto; }
+        .content { background: white; padding: 40px; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); margin-bottom: 40px; }
+        h2 { color: #007aff; border-bottom: 2px solid #007aff; padding-bottom: 10px; margin-bottom: 30px; font-size: 1.8rem; }
+        .faq-item { margin-bottom: 30px; padding: 20px; border-radius: 8px; transition: background-color 0.2s; }
+        .faq-item:hover { background: #f8f9fa; }
+        .question { font-weight: 600; color: #1d1d1f; margin-bottom: 10px; font-size: 1.1rem; }
+        .answer { color: #424245; }
+        .contact-section { background: #f2f2f7; padding: 30px; border-radius: 8px; margin-top: 40px; }
+        .contact-form { display: grid; gap: 15px; }
+        .contact-form input, .contact-form textarea { padding: 12px; border: 1px solid #d2d2d7; border-radius: 6px; font-size: 16px; font-family: inherit; }
+        .contact-form input:focus, .contact-form textarea:focus { outline: none; border-color: #007aff; box-shadow: 0 0 0 3px rgba(0,122,255,0.1); }
+        .contact-form button { background: #007aff; color: white; padding: 12px 24px; border: none; border-radius: 6px; font-size: 16px; cursor: pointer; transition: background-color 0.2s; }
+        .contact-form button:hover { background: #0056b3; }
+        .footer { background: #f5f5f7; padding: 40px 20px; text-align: center; color: #86868b; margin-top: 40px; }
+        .footer a { color: #007aff; text-decoration: none; }
+        .footer a:hover { text-decoration: underline; }
+        @media (max-width: 768px) { .nav-links { display: none; } .header { padding: 100px 20px 60px; } .content { padding: 30px 20px; } }
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-content">
+            <a href="index.html" class="nav-logo">NihonGo</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="privacy.html">Privacy</a>
+                <a href="terms.html">Terms</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="header">
+        <h1>NihonGo Support Center</h1>
+        <p>Can't find what you're looking for? We're here to help you get the most out of your Japanese learning journey.</p>
+    </div>
+    
+    <div class="container">
+        <div class="content">
+            <h2>Frequently Asked Questions</h2>
+            
+            <div class="faq-item">
+                <div class="question">How do I get started with NihonGo?</div>
+                <div class="answer">Download the app, create an account, and choose your Japanese learning level. Start with kana practice or jump into AI conversations to begin your learning journey.</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="question">What Japanese levels does NihonGo support?</div>
+                <div class="answer">NihonGo supports all levels from complete beginner (N5) to advanced (N1), with content automatically adapting to your current proficiency.</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="question">How does the AI conversation feature work?</div>
+                <div class="answer">Our AI creates realistic Japanese conversations based on your level. Practice common scenarios like ordering food, asking directions, or casual conversation with instant feedback.</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="question">Can I use NihonGo offline?</div>
+                <div class="answer">Yes! Vocabulary practice and kana review work offline. AI conversations require an internet connection for real-time processing.</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="question">How do I track my progress?</div>
+                <div class="answer">Your progress is automatically tracked across all features. View detailed analytics, learning streaks, and achievements in the app dashboard.</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="question">Is my learning data private?</div>
+                <div class="answer">Absolutely. Your data is encrypted and never shared with third parties. We use it only to personalize your learning experience.</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="question">How do I reset my progress?</div>
+                <div class="answer">Go to Settings > Reset Progress. You can reset individual areas or start completely fresh with a new account.</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="question">What devices are supported?</div>
+                <div class="answer">NihonGo works on iPhone and iPad running iOS 14.0 or later. Your progress syncs across all your devices.</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="question">How do I report a bug or suggest a feature?</div>
+                <div class="answer">Use the contact form below or email us directly. We read every message and respond within 24 hours.</div>
+            </div>
+            
+            <div class="contact-section">
+                <h2>Still Need Help?</h2>
+                <p>Can't find what you're looking for? Contact our support team directly:</p>
+                
+                <form class="contact-form" action="mailto:cagri.gider.business@gmail.com" method="post" enctype="text/plain">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <input type="text" name="subject" placeholder="Subject" required>
+                    <textarea name="message" rows="5" placeholder="Describe your issue or question..." required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+                
+                <p style="margin-top: 20px; text-align: center;">
+                    <strong>Email:</strong> <a href="mailto:cagri.gider.business@gmail.com">cagri.gider.business@gmail.com</a><br>
+                    <strong>Response Time:</strong> Within 24 hours
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <div class="container">
+            <p>© 2024 NihonGo. All rights reserved.</p>
+            <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+        </div>
+    </div>
+</body>
+</html>

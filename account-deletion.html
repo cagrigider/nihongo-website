@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<!--
+  NihonGo — account deletion request page (FR-040, BR-026, D-028; TASK-2.3.2).
+
+  Google Play requires apps that let users create an account to link, from the Play Console
+  "Data safety" / data-deletion field, a web page where a user can request account and data
+  deletion without installing the app. This file is that page's source of truth.
+
+  Hosting (D-028): GitHub Pages, next to the existing support and privacy pages, at
+  https://cagrigider.github.io/nihongo-website/account-deletion.html — copy this file into the
+  nihongo-website repo unchanged (it is self-contained: no scripts, no external assets, no
+  trackers). Publish it, open the URL to confirm it serves this page, and only then enter that
+  URL in the Play Console data-deletion field.
+
+  Keep the "What is deleted" list in step with the in-app deletion
+  (app/src/main/java/cagri/gider/nihongo/account/domain/DeleteAccountUseCase.kt).
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index, follow">
+  <title>Delete your NihonGo account</title>
+  <style>
+    :root { color-scheme: light dark; }
+    body {
+      margin: 0 auto;
+      max-width: 44rem;
+      padding: 1.5rem;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.6;
+    }
+    h1 { font-size: 1.75rem; line-height: 1.25; }
+    h2 { font-size: 1.25rem; margin-top: 2rem; }
+    code { font-size: 0.95em; }
+    .note { border-left: 0.25rem solid currentColor; padding-left: 1rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Delete your NihonGo account</h1>
+    <p>
+      This page explains how to delete your account in <strong>NihonGo</strong>, the Japanese
+      learning app for Android and iOS by Cagri Gider, and which data is deleted.
+    </p>
+
+    <h2>Option 1: delete your account in the app</h2>
+    <ol>
+      <li>Open NihonGo and go to <strong>Settings</strong>.</li>
+      <li>Tap <strong>Delete Account</strong>, then <strong>Permanently Delete Account</strong>.</li>
+      <li>Confirm, then confirm it's you with the Google account you signed in with.</li>
+    </ol>
+    <p>
+      Your account and the data listed under <em>What is deleted</em> are deleted right away,
+      while you wait on the deletion screen. If the deletion cannot finish (for example because you
+      are offline), the app tells you so and nothing is reported as deleted until it has been; if
+      your sign-in account was removed but the data on your device was not, the app removes that
+      data the next time it starts.
+    </p>
+
+    <h2>Option 2: request deletion without the app</h2>
+    <p>
+      If you can no longer use the app, send an email to
+      <a href="mailto:cagri.gider.business@gmail.com?subject=Account%20deletion%20request">cagri.gider.business@gmail.com</a>
+      with the subject <em>Account deletion request</em>, sent from the email address of the Google
+      account you signed in to NihonGo with. We may ask you to confirm the request from that address
+      before deleting anything, so that nobody else can delete your account.
+    </p>
+    <p>
+      Requests by email are handled by hand. We confirm that we received your request within
+      7 days, and delete your account and the online data listed below within 30 days of
+      receiving it (or of your confirmation, if we asked for one). We email you when it is done.
+      Data stored on your device is not reachable by us: uninstall the app to remove it.
+    </p>
+
+    <h2>What is deleted</h2>
+    <ul>
+      <li>Your NihonGo sign-in account.</li>
+      <li>Your learning progress stored online (vocabulary, kanji, study time and activity history).</li>
+      <li>Your notification registration record.</li>
+      <li>Your referral code and its records, and any referral you redeemed, if you used the referral feature.</li>
+      <li>When you delete in the app: all NihonGo data stored on that device for your account.</li>
+    </ul>
+
+    <h2>What is not deleted</h2>
+    <ul>
+      <li>
+        <strong>Subscriptions are not cancelled.</strong> Purchases are handled by Google Play, not
+        by NihonGo. Cancel your subscription there before deleting your account to stop future
+        charges: <a href="https://play.google.com/store/account/subscriptions">Google Play subscriptions</a>.
+        Google keeps its own purchase records under its own policies.
+      </li>
+      <li>
+        <strong>Usage statistics and crash reports.</strong> The app sends app-usage events (for
+        example that a learning session was completed, or that the subscription screen was shown)
+        to Google Analytics for Firebase, and crash reports to Firebase Crashlytics. They are never linked to your NihonGo account: no account
+        identifier, name, email address or learning content is included. Because they cannot be
+        traced back to your account they are not deleted with it; Google keeps them for the
+        retention periods of those Firebase services, and we use them only to understand usage in
+        aggregate and to fix crashes.
+      </li>
+      <li>
+        <strong>Device identifiers used by Firebase.</strong> Firebase Cloud Messaging (push
+        notifications) and Firebase Installations use an identifier of the app installation on your
+        device, not of your account. It is not deleted with your account; it stops being used when
+        you uninstall the app, and expires after a period of inactivity.
+      </li>
+      <li>
+        If another user redeemed your referral code, their own record of that redemption belongs
+        to their account and is removed when they delete theirs.
+      </li>
+    </ul>
+
+    <p class="note">
+      Deleting your account cannot be undone. If you only want to stop using NihonGo on one device,
+      uninstalling the app removes the data stored on that device.
+    </p>
+  </main>
+</body>
+</html>
